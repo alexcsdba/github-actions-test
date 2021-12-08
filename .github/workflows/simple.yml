@@ -1,0 +1,15 @@
+name: Alex Shell Commands
+
+on: [push]
+
+jobs:
+  alxjob-run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "Hello Alex"
+      - name: run multiple Commands
+        run: |
+          node -v
+          npm -v
+          
